@@ -1,12 +1,6 @@
 
- .nav-list
-{
+ .nav-list{
   display: none;
-}
-
-.contact-number,
-.contact-mail{
-  display:none;
 }
 
 .contact{
@@ -24,10 +18,11 @@ align-items: center;
   border: none;
   padding: 0;
   line-height: 0;
+  top: 10px;
 }
 .header{
   position: relative;
-  padding-top: 15px;
+  
 }
 .mobile-menu{
   position: absolute;
@@ -37,16 +32,48 @@ align-items: center;
  height: 100vh;
  overflow: auto;
  background-color: violet;
+
+ opacity: 0;
+ visibility: hidden;
+ pointer-events: none;
 }
+.mobile-menu.is-open{
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
+}
+
 .mobile-menu__close-btn{
   position: absolute;
   top: 10px;
-  right: 0;
+  right: 15px;
+
 
   background-color: transparent;
   border: none;
   padding: 0;
   line-height: 0;
+}
+.mobile-menu__container{
+  position: relative;
+  padding-top: 48px;
+}
+.header__container{
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list {
+      display: block;
+    }
+  
+    .contact {
+      display: block;
+    }
+    .burger-btn{
+      display: none;
+    }
+  
 }
 // .header {
 //   border-bottom: 1px solid #ececec;

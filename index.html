@@ -33,7 +33,7 @@
                 <a class="nav-list__link link"  href="#">Контакты</a>
             </li>
         </ul>
-         <button type="button" class="burger-btn"> 
+         <button type="button" class="burger-btn" data-menu-open> 
           <svg class="burger-btn__icon" width="40" height="40"> 
               <use href="./img/sprite.svg#burger-icon"> </use>
           </svg>
@@ -56,25 +56,28 @@
         </li>
         </ul>  
     </div>
-    <div class="mobile-menu">
-        <button class="mobile-menu__close-btn"> 
-            <svg class="mobile-menu__close-icon" width="18px" height="18px">
-                <use href="./img/sprite.svg#icon-close-btn"> </use>
-            </svg>
+    <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container"> 
+            <button class="mobile-menu__close-btn" data-menu-close> 
+                <svg class="mobile-menu__close-icon" width="40px" height="40px">
+                    <use href="./img/sprite.svg#icon-close-cros"> </use>
+                </svg>
 
-        </button>
-          <ul>
-            <li>
-                <a class="link" href="">Студия</a>
-                 </li>
-            <li>
-                <a class="link" href="">Портфолио</a>
-                 </li>
-            <li>
-                <a class="link" href=""> Контакты</a>
-                 </li>
-          </ul>
-    </div>
+            </button>
+            <ul class="list">
+                <li>
+                    <a class="link" href="">Студия</a>
+                    </li>
+                <li>
+                    <a class="link" href="">Портфолио</a>
+                    </li>
+                <li>
+                    <a class="link" href=""> Контакты</a>
+                    </li>
+            </ul>
+        </div> 
+        </div>
+        
         </header>
         <main>
             <!-- <section class="hero">
@@ -480,5 +483,6 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
 </body>
 </html>
