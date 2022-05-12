@@ -880,14 +880,6 @@ img {
   margin-left: 10px;
 }
 
-.nav-list {
-  display: none;
-}
-
-.contact {
-  display: none;
-}
-
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -942,6 +934,15 @@ img {
 
 .header__container {
   padding-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-list {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
